@@ -1,0 +1,119 @@
+.container {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    top: 120px;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    padding-top: 1px;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.logocontainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.midlogo {
+    width: 200px;
+    margin: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 300px;
+    color: black;
+    background-color: #f0f2f5;
+    border: 1px solid #ccc;
+}
+
+.search-form ::placeholder {
+    color: #A9A9A9;
+}
+
+
+
+.lowerTable,
+.lowerTable td,
+.lowerTable th {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.lowerTable img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.lowerTable td,
+.lowerTable th {
+    padding: 20px;
+    text-align: center;
+}
+
+.lowerTable #color1:hover,
+.lowerTable #color2:hover {
+    background-color: #5D5D5D;
+    color: white;
+    cursor: pointer;
+}
+
+
+.lowerTable th {
+    background-color: #808080;
+}
+
+#color1 {
+    background-color: #d9d9d9;
+}
+
+#color2 {
+    background-color: #bfbfbf;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a.active {
+    background-color: black;
+    color: white;
+}
+
+td button {
+    background-color:#f44336;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#redirectLink{
+    background-color:#f44336;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    text-decoration: none;
+}

@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+}
+body>*{
+    overflow: hidden;
+}
+.sidebar{
+    flex: 0 1 200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: relative;
+    ;
+}
+.sidebar>.image{
+    width: 50%;
+    top:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.sidebar>.image>img{
+    width: 100%;
+}
+ul{
+    padding: 0;
+}
+.sidebar ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 0.5em;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.sidebar ul li:hover{
+    border-color: black;
+}
+.sidebar ul .image{
+    width: 40px;
+    margin-right: 5px;
+}
+.sidebar ul li:nth-child(2) .image{
+    width: 40px;
+}
+.sidebar ul img{
+    width: 100%;
+}
+.main{
+    flex: 1 1 60%;
+    background-color: #f5f5f5;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.top{
+    flex: 0 0 80px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 5% 0 5%;
+    align-items: center;
+}
+.top>h1{
+    margin:0;
+}
+
+.navigate{
+    flex: 0 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigate ul{
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+    background-color: #ffffff;
+    padding: 10px 5px;
+    border-radius: 0.5em;
+}
+.navigate ul li{
+    list-style-type: none;
+    margin: 0 5px;
+}
+.navigate ul li>div{
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 10px 5px;
+    font-size: small;
+}
+.navigate ul li:not(li:nth-child(1))>div{
+    background-color: #232b2b;
+    color:white;
+}
+.content{
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.content .wrap{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 98%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 0.5em;
+    overflow-y: scroll;
+}
+div.wrap::-webkit-scrollbar{
+    background: transparent;
+}
+div.wrap::-webkit-scrollbar-thumb{
+    background: lightgray;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+div.wrap::-webkit-scrollbar-corner{
+    border-radius: 10px;
+    background: lightgray;
+}
+@keyframes fade{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.sideDetail{
+    flex: 1 0 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.sideDetail .image{
+    width: 80%;
+}
+.sideDetail .image>img{
+    width: 100%;
+}
+.sideDetail h2{
+    margin: 0;
+    text-align: center;
+    flex: 0 0 10%;
+}
+.sideDetail>div{
+    padding: 16px;
+    flex: 1 0 80%;
+    overflow-y: scroll;
+}
+.sideDetail>div::-webkit-scrollbar{
+    background: transparent;
+}
+.sideDetail>div::-webkit-scrollbar-thumb{
+    background: lightgray;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+.sideDetail>div::-webkit-scrollbar-corner{
+    border-radius: 10px;
+    background: lightgray;
+}
+input[type=submit]{
+    width:100%;
+    background-color: #232b2b;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0.5em;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+input:not(input[type=submit]),select{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    border:none;
+    border-radius: 0.5em;
+    background: #f1f1f1;
+    transition: background-color 0.5s;
+}
+input:not(input[type=submit]){
+    background-color: #ddd;
+    outline:none;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+td{
+    background-color: white;
+    color: black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td:last-child{
+    margin-left: 0;
+    margin-right: 0;
+}
+.wrap>div{
+    padding:10px;
+    width: 100%;
+    cursor: pointer;
+}
+div.addItem{
+    padding:10px;
+    text-align: center;
+    width: 134px;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+td>div{
+    background-color: #ffffff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+}
+td>div:nth-child(1):hover{
+    background-color: black;
+    color:green;
+}
+td>div:nth-child(2):hover{
+    background-color: black;
+    color:red;
+}

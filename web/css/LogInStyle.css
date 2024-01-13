@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+h2{
+    font-size: 22px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: #ffffff;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 30px;
+}
+
+.main > div:nth-child(1) {
+    border-right: 2px solid black;
+    height: 100%;
+}
+
+.main > div:nth-child(1) .image {
+    width: 80%;
+}
+
+.main > div:nth-child(1) img {
+    width: 100%;
+}
+
+.main form {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input:not(input[type="submit"]),
+select {
+    margin-bottom: 10px; /* Increase the margin-bottom value to create more space */
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-label i {
+    margin-right: 10px;
+}

@@ -1,0 +1,162 @@
+/* OrderStyle.css */
+
+* {
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;
+    background-color: #ffffff;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ 
+
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 30px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0; /* Add this line to remove default margin */
+    padding: 5px; /* Add this line to remove default padding */
+    
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover div{
+ border: 1px solid #000000;
+    }
+
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.job {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.title h3 {
+    color: #000000;
+    text-align: 150px 6px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 15px;
+}
+
+.card h5 {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.pra {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.pra .CancelButton,.PrepareButton {
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.CancelButton {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.PrepareButton {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.CancelButton:hover,
+.PrepareButton:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #FFFFFF;
+    padding: auto;
+    text-align: center;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+}

@@ -1,0 +1,100 @@
+.container {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    top: 90px;
+    color: black;
+    background-color: #ffffff;
+    padding: 15px;
+    padding-top: 1px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.container a:hover {
+    color: #848484;
+}
+
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black
+}
+
+.upperTable,
+.upperTable td {
+    height: 150px;
+    padding-left: 5px;
+}
+
+
+#pic {
+    width: 100px;
+    text-align: center;
+}
+
+#name {
+    padding-left: 10px;
+}
+
+#edit {
+    width: 620px;
+}
+
+#edit a {
+    float: right;
+}
+
+
+.lowerTable td {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    width: 760px;
+}
+
+.lowerTable label {
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+.lowerTable input[type="email"],
+.lowerTable input[type="text"],
+.lowerTable select,
+.lowerTable input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f0f2f5;
+    color: black;
+}
+
+#ans {
+    color: #65676b;
+}
+
+.lowerTable button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.success {
+    color: #028a0f;
+}

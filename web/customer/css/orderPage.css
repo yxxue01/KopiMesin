@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    
+    all:unset;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+}
+body>*{
+    overflow: hidden;
+}
+header{
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+.navigate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.navigate>div:nth-child(1){
+    width: 70px;
+}
+.navigate>div:nth-child(1)>img{
+    width: 100%;
+    object-fit: cover;
+}
+.navigate>div:nth-child(3){
+    width: 70px;
+}
+.navigate>div:nth-child(3)>a{
+    width: 100%;
+    height: 100%;
+}
+.navigate>div:nth-child(3)>a>img{
+    width: 100%;
+    object-fit: cover;
+}
+h1{
+    margin: 0;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding-left:10px;
+    margin: 0;
+    flex-basis: 10%;
+}
+ul li{
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+}
+.bar{
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    border-radius: 0.5em;
+}
+.content{
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.content>:nth-child(2){
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+    
+}
+.content>:nth-child(2)>:nth-child(1){
+    flex-basis: 15%;
+}
+.content>:nth-child(2)>:nth-child(1)>ul{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    margin-left: 25%;
+    margin-top: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 0.5em;
+}
+.content>:nth-child(2)>:nth-child(1) li{
+    margin: 10px 10px;
+}
+.content .wrap{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    flex-basis:75%;
+    flex-shrink: 1;
+    height: 98%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 0.5em;
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+div.wrap::-webkit-scrollbar{
+    background: transparent;
+}
+div.wrap::-webkit-scrollbar-thumb{
+    background: lightgray;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+div.wrap::-webkit-scrollbar-corner{
+    border-radius: 10px;
+    background: lightgray;
+}
+.order{
+    margin: 1% 1%;
+    height: 70%;
+    background-color: #ffffff;
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0.5em;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.order .image{
+    width: 100%;
+    flex: 1 1 70%;
+    margin-bottom: 2px;
+    border-radius: 0.5em;
+}
+.order img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.order p.name{
+    font-weight: bold;
+}
+.order p{
+    flex: 0 0 auto;
+    text-align: start;
+    margin: 0;
+    padding: 5px;
+}
+.order .grid{
+    display: flex;
+    justify-content: space-between;
+}
+.order button{
+    font-size: larger;
+    width: 50px;
+    outline: none;
+    border:none;
+    background-color: orange;
+    border-radius: 0.5em;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.order button:hover{
+    background-color: greenyellow;
+}

@@ -1,0 +1,156 @@
+.container {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    top: 120px;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    padding-top: 1px;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.logocontainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.midlogo {
+  width: 200px;
+  border-radius: 30px;
+    margin: 20px;
+}
+
+.upperTable{
+    margin: auto;
+}
+
+
+.selection-wrapper select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    background-color: #f0f2f5;
+}
+
+
+.mark-all-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+.lowerTable,
+.lowerTable td,
+.lowerTable th {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.lowerTable img{
+width: 30px;
+border-radius: 50%;
+}
+
+.lowerTable td,
+.lowerTable th {
+    padding: 20px;
+}
+
+.lowerTable td {
+    text-align: left;
+    border-top: 1px solid #bfbfbf;
+}
+
+.lowerTable .color1:hover,
+.lowerTable .color2:hover{
+  background-color: #5D5D5D;
+  color: white;
+  cursor: pointer;
+}
+
+
+.lowerTable th {
+    background-color: #808080;
+}
+
+.color1 {
+    background-color: #bfbfbf;
+}
+
+.color2 {
+    background-color: #bfbfbf;
+}
+
+.lowerTable .unread-dot {
+    top: 50%;
+    left: -10px;
+    position: relative;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  .lowerTable td.unread .unread-dot {
+    visibility: visible;
+  }
+
+  .lowerTable td.unread td {
+    padding-left: 20px; /* Adjust the padding */
+  }
+
+  .lowerTable td.unread .read-dot {
+    visibility: hidden;
+  }
+
+  .lowerTable td.read .unread-dot {
+    visibility: hidden;
+  }
+
+  .lowerTable  td.read .read-dot {
+    visibility: visible;
+  }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a.active {
+    background-color: black;
+    color: #fff;
+}
+
+td button {
+background-color: red;
+border-radius: 5px;
+color: white;
+border: none;
+cursor: pointer;
+}

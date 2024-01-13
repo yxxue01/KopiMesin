@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <link href="css/preparing.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="image"><img src="icon/logo.png" alt=""></div>
+        <ul>
+            <li onclick="location.href='takeOrder.html'"><div class="image"><img src="icon/takeOrder.png" alt=""></div>Take Order</li>
+            <li onclick="location.href='newOrder.html'"><div class="image"><img src="icon/mOrder.png" alt=""></div>Manage Order</li>
+            <li onclick="location.href='todaySales.html'"><div class="image"><img src="icon/sales.png" alt=""></div>Daily Sales</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="top">
+            <div class="image">
+                <img src="icon/profile.png" alt="profile pic">
+            </div>
+            <div>
+                <p>Welcome, Luqman</p>
+                <p>Staff ID: 11098</p>
+            </div>
+        </div>
+        <div class="navigate">
+            <ul>
+                <li>
+                    <div onclick="location.href='newOrder.html'">
+                        <div class="image"><img src="icon/neworder.png" alt=""></div>
+                        <p>New Order</p>
+                    </div>    
+                </li>
+                <li>
+                    <div onclick="location.href='preparing.html'">
+                        <div class="image"><img src="icon/preparing.png" alt=""></div>
+                        <p>Preparing</p>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="location.href='orderHistory.html'">
+                        <div class="image"><img src="icon/history.png" alt=""></div>
+                        <p>Order History</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="wrap">
+                <div class="order">
+                    <p><b># 1435</b></p>
+                    <p class="time">5:08 PM</p>
+                </div>
+                <div class="order">
+                    <p><b># 1435</b></p>
+                    <p class="time">5:08 PM</p>
+                </div>
+                <div class="order">
+                    <p><b># 1435</b></p>
+                    <p class="time">5:08 PM</p>
+                </div>
+                <div class="order">
+                    <p><b># 1435</b></p>
+                    <p class="time">5:08 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sideDetail">
+        <h2>Order Details</h2>
+        <h4>#1435</h4>
+        <div class="itemcover">
+            <div class="item">
+                <div class="image"><img src="image/flatwhite.jpg" alt=""></div>
+                <div class="name">Flatwhite</div>
+                <div class="price">RM 10.90</div>
+                <div class="qty">1</div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="image/german.jpg" alt=""></div>
+                <div class="name">German</div>
+                <div class="price">RM 5.90</div>
+                <div class="qty">1</div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="image/fishchip.jpg" alt=""></div>
+                <div class="name">Fish Chip</div>
+                <div class="price">RM 7.90</div>
+                <div class="qty">2</div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="image/cubano.jpeg" alt=""></div>
+                <div class="name">Cubano</div>
+                <div class="price">RM 7.90</div>
+                <div class="qty">2</div>
+            </div>
+        </div>
+        <div class="calculation">
+            <div>
+                <p>Phone no.</p>
+                <p>011-25294413</p>
+                <p>Order time</p>
+                <p>8.19 PM</p>
+                <p>Payment</p>
+                <p>Online</p>
+            </div>            
+        </div>
+        <div class="wrapButton">
+            <div>
+                <h4>Order Status</h4>
+                <div class="buttonCover" id="first">
+                    <div>Queue</div>
+                    <div>Preparing</div>
+                    <div>Finish</div>
+                </div>
+                <div class="buttonCover" id="second">
+                    <div>Serve</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

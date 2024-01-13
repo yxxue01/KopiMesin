@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    margin: auto;
+    margin-top: -21px;
+    width: 98%;
+    top: 70px;
+    color: black;
+}
+
+/* Apply styles to the container */
+.container2 {
+    display: flex;
+    justify-content: center;
+    /* Center the columns horizontally */
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    /* Adjust the spacing between columns */
+    max-width: 300px;
+    /* Set a maximum width for the columns */
+}
+
+/* Upper part styles */
+.upper-part {
+    padding: 1px;
+    /* Adjust the padding within the upper part */
+    background-color: #ffffff;
+    /* Set the background color for the upper part */
+    color: black;
+    text-align: center;
+    border: solid 1px #bfbfbf;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* Lower part styles */
+.lower-part {
+    padding-top: 20px;
+    /* Adjust the padding within the lower part */
+    background-color: #ABABAB;
+    /* Set the background color for the lower part */
+    height: 300px;
+    border: solid 1px #bfbfbf;
+    color: black;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.lower-part li {
+    padding-bottom: 10px;
+}
+
+.lower-part li a {
+    text-decoration: none;
+    width: fit-content;
+    color: black;
+}
+
+.lower-part li a:hover {
+    color: white;
+    background-color: #ABABAB;
+    cursor: pointer;
+}

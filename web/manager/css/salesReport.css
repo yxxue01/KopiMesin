@@ -1,0 +1,131 @@
+.container {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    top: 120px;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    padding-top: 1px;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.logocontainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.midlogo {
+    width: 200px;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+
+.selection-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+    float:left;
+}
+
+.selection-wrapper select,
+.selection-wrapper input[type="date"],
+.selection-wrapper span {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    background-color: #f0f2f5;
+}
+
+
+.selection-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    color: black
+    /* Inverts the color */
+}
+
+.to-label {
+    display: block;
+}
+
+#sales {
+    width: 100%;
+    font-size: 20px;
+    padding: 3px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    background-color: #f0f2f5;
+}
+
+.upperTable,
+.upperTable td {
+    margin: auto;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.upperTable {
+    margin-bottom: 5px;
+}
+
+
+#filter {
+    width: auto;
+}
+
+
+.lowerTable,
+.lowerTable td,
+.lowerTable th {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.lowerTable td,
+.lowerTable th {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.lowerTable th {
+    background-color: #808080;
+}
+
+#color1 {
+    background-color: #d9d9d9;
+}
+
+#color2 {
+    background-color: #bfbfbf;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a.active {
+    background-color: black;
+    color: #fff;
+}

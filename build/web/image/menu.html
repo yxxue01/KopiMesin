@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+
+<h3 style="font-size: 50px;"><b>Menu</b></h3>
+
+  <h3 style="font-size: 28px;"><b>Drinks</b></h3>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Signatures</a> 
+    <a href="#specialhot" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Special Hot</a> 
+    <a href="#artisanmain  " onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artisan Main</a> 
+    <a href="#sparkling" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sparkling</a> 
+    <a href="#noncoffee" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Non Coffee</a>
+  </div>
+
+  <br><br>	
+  <h3 style="font-size: 28px;"><b>Food</b></h3>
+  <div class="w3-bar-block">
+    <a href="#mains" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mains</a> 
+    <a href="#desserts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Desserts</a> 
+  </div>
+
+</nav> 
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Menu</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:30px" id="signatures">
+    
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Signatures</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
+  </div>
+  
+  <!-- Signatures -->
+<div class="row">
+  <div class="column">
+	<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="german.jpg" style="width:100%" onclick="onClick(this)" alt="german iced 	coffee"></a>
+ 	 <div class="container">
+	<h4>German Iced Coffee</h4>
+	<h6>RM13.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+	<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="hawaiianicedcoffee.jpg" style="width:100%" onclick="onClick(this)"    	alt="hawaiian iced coffee"></a>
+	<div class="container">
+	<h4>Hawaiian Iced Coffee</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+  </div>
+</div>
+
+  <!-- Special Hot -->
+  <div class="w3-container" id="specialhot" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Special Hot</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
+<div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="piccololatte.webp" style="width:100%" onclick="onClick(this)" alt="piccolo latte"></a>
+	<div class="container">
+	<h4>Piccolo Latte</h4>
+	<h6>RM10.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="flatwhite.jpg" style="width:100%" onclick="onClick(this)" alt="flat white"></a>
+	<div class="container">
+	<h4>Flat White</h4>
+	<h6>RM9.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="cubano.jpeg" style="width:100%" onclick="onClick(this)" alt="cubano"></a>
+	<div class="container">
+	<h4>Cubano</h4>
+	<h6>RM6.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="vienna.jpg" style="width:100%" onclick="onClick(this)" alt="vienna melange"></a>
+	<div class="container">
+	<h4>Vienna Melange</h4>
+	<h6>RM10.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="affogato.jpg" style="width:100%" onclick="onClick(this)" alt="affogato"></a>
+	<div class="container">
+	<h4>Affogato</h4>
+	<h6>RM9.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="doppio.webp" style="width:100%" onclick="onClick(this)" alt="doppio"></a>
+	<div class="container">
+	<h4>Doppio</h4>
+	<h6>RM7.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="espresso.jpg" style="width:100%" onclick="onClick(this)" alt="espresso"></a>
+	<div class="container">
+	<h4>Espresso</h4>
+	<h6>RM6.00</h6>
+      </div>
+      </div>
+  	</div>
+  </div>
+</div>
+  
+  <!-- Artisan Main -->
+  <div class="w3-container" id="artisanmain" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Artisan Main</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
+<div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="mintcoffee.png" style="width:100%" onclick="onClick(this)" alt="mint coffee"></a>
+	<div class="container">
+	<h4>Mint Coffee</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="vanillalatte.jpg" style="width:100%" onclick="onClick(this)" alt="vanilla latte"></a>
+	<div class="container">
+	<h4>Vanilla Latte</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="coconutmilk.png" style="width:100%" onclick="onClick(this)" alt="coconut milk latte"></a>
+	<div class="container">
+	<h4>Coconut Milk Latte</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="macadamianutlatte.jpg" style="width:100%" onclick="onClick(this)" alt="macadamia nut latte"></a>
+	<div class="container">
+	<h4>Macadamia Nut Latte</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="hazelnutlatte.jpg" style="width:100%" onclick="onClick(this)" alt="hazelnut latte"></a>
+	<div class="container">
+	<h4>Hazelnut Latte</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="saltedcaramel.jpg" style="width:100%" onclick="onClick(this)" alt="salted caramel"></a>
+	<div class="container">
+	<h4>Salted Caramel</h4>
+	<h6>RM13.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="americano.jpg" style="width:100%" onclick="onClick(this)" alt="americano"></a>
+	<div class="container">
+	<h4>Americano</h4>
+	<h6>RM7.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="caffelatte.jpeg" style="width:100%" onclick="onClick(this)" alt="caffe latte"></a>
+	<div class="container">
+	<h4>Caffe Latte</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="cappuccino.jpg" style="width:100%" onclick="onClick(this)" alt="cappucino"></a>
+	<div class="container">
+	<h4>Cappucino</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="caramelmacchiato.webp" style="width:100%" onclick="onClick(this)" alt="caramel macchiato"></a>
+	<div class="container">
+	<h4>Caramel Macchiato</h4>
+	<h6>RM13.50</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="matchalatte.webp" style="width:100%" onclick="onClick(this)" alt="matcha latte"></a>
+	<div class="container">
+	<h4>Matcha Latte</h4>
+	<h6>RM14.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+  </div>
+</div>
+</div>
+
+  <!-- Sparkling -->
+  <div class="w3-container" id="sparkling" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Sparkling</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
+ <div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="bluelagoon.jpg" style="width:100%" onclick="onClick(this)" alt="blue lagoon"></a>
+	<div class="container">
+	<h4>Blue Lagoon</h4>
+	<h6>RM13.90</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="sweetsunrise.jpg" style="width:100%" onclick="onClick(this)" alt="sweet sunrise"></a>
+	<div class="container">
+	<h4>Sweet Sunrise</h4>
+	<h6>RM13.90</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="rosesoda.webp" style="width:100%" onclick="onClick(this)" alt="rose soda"></a>
+	<div class="container">
+	<h4>Rose Soda</h4>
+	<h6>RM14.50</h6>
+      </div>
+      </div>
+  </div>
+</div>
+  </div>
+  
+  <!-- Non-Coffee -->
+  <div class="w3-container" id="noncoffee" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Non Coffee</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
+    <div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="mangoshake.jpg" style="width:100%" onclick="onClick(this)" alt="mango shake"></a>
+	<div class="container">
+	<h4>Mango Shake</h4>
+	<h6>RM12.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="chocolate.webp" style="width:100%" onclick="onClick(this)" alt="chocolate"></a>
+	<div class="container">
+	<h4>Chocolate</h4>
+	<h6>RM10.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="mangotea.jpg" style="width:100%" onclick="onClick(this)" alt="mango tea"></a>
+	<div class="container">
+	<h4>Mango Tea</h4>
+	<h6>RM8.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="greentea.avif" style="width:100%" onclick="onClick(this)" alt="green tea"></a>
+	<div class="container">
+	<h4>Green Tea</h4>
+	<h6>RM6.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="lemontea.jpg" style="width:100%" onclick="onClick(this)" alt="lemon tea"></a>
+	<div class="container">
+	<h4>Lemon Tea</h4>
+	<h6>RM6.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="peachtea.jpg" style="width:100%" onclick="onClick(this)" alt="peach tea"></a>
+	<div class="container">
+	<h4>Peach Tea</h4>
+	<h6>RM7.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="tea.jpg" style="width:100%" onclick="onClick(this)" alt="tea"></a>
+	<div class="container">
+	<h4>Tea</h4>
+	<h6>RM6.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+  </div>
+
+ <!-- Mains -->
+  <div class="w3-container" id="mains" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Main Course</b></h1>
+    <hr style="width:50px;border:5px solid;" class="w3-round">
+    <div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="lambchop.jpg" style="width:100%" onclick="onClick(this)" alt="lamb chop"></a>
+	<div class="container">
+	<h4>Lamb Chop</h4>
+	<h6>RM35.50</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="chickenchop.webp" style="width:100%" onclick="onClick(this)" alt="chicken chop"></a>
+	<div class="container">
+	<h4>Chicken Chop</h4>
+	<h6>RM25.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="chickengrill.jpg" style="width:100%" onclick="onClick(this)" alt="chicken grill"></a>
+	<div class="container">
+	<h4>Chicken Grill</h4>
+	<h6>RM28.90</h6>
+      </div>
+      </div>
+  </div>
+</div>
+    <div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="fishchip.jpg" style="width:100%" onclick="onClick(this)" alt="fish n chip"></a>
+	<div class="container">
+	<h4>Fish and Chips</h4>
+	<h6>RM20.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="carbonara.jpg" style="width:100%" onclick="onClick(this)" alt="spaghetti carbonara"></a>
+	<div class="container">
+	<h4>Spaghetti Carbonara</h4>
+	<h6>RM18.90</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="bolognese.jpg" style="width:100%" onclick="onClick(this)" alt="spaghetti bolognese"></a>
+	<div class="container">
+	<h4>Spaghetti Bolognese</h4>
+	<h6>RM18.90</h6>
+      </div>
+      </div>
+  </div>
+</div>
+  </div>
+
+ <!-- Desserts -->
+  <div class="w3-container" id="mains" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Desserts</b></h1>
+    <hr style="width:50px;border:5px solid;" class="w3-round">
+    <div class="row">
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="cake1.jpeg" style="width:100%" onclick="onClick(this)" alt="strawberry"></a>
+	<div class="container">
+	<h4>Strawberry Shortcake</h4>
+	<h6>RM10.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="cake2.jpeg" style="width:100%" onclick="onClick(this)" alt="tiramisu"></a>
+	<div class="container">
+	<h4>Tiramisu</h4>
+	<h6>RM11.00</h6>
+      </div>
+      </div>
+  </div>
+  <div class="column">
+<div class="card">
+	<a target="_blank" href="selectItem.html">
+      <img src="cake4.jpg" style="width:100%" onclick="onClick(this)" alt="lemon"></a>
+	<div class="container">
+	<h4>Lemon Shortcake</h4>
+	<h6>RM10.00</h6>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
